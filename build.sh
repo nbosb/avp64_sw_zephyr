@@ -1,4 +1,14 @@
 #!/bin/env bash
+ ##############################################################################
+ #                                                                            #
+ # Copyright (C) 2025 Nils Bosbach                                            #
+ # All Rights Reserved                                                        #
+ #                                                                            #
+ # This is work is licensed under the terms described in the LICENSE file     #
+ # found in the root directory of this source tree.                           #
+ #                                                                            #
+ ##############################################################################
+
 set -e
 
 # Get directory of script itself
