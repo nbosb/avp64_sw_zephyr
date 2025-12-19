@@ -1,0 +1,26 @@
+ ##############################################################################
+ #                                                                            #
+ # Copyright (C) 2025 Nils Bosbach                                            #
+ # All Rights Reserved                                                        #
+ #                                                                            #
+ # This is work is licensed under the terms described in the LICENSE file     #
+ # found in the root directory of this source tree.                           #
+ #                                                                            #
+ ##############################################################################
+
+menuconfig VCML_SIMDEV
+	bool "vcml simdev"
+
+if VCML_SIMDEV
+
+module = VCML_SIMDEV
+module-str = vcml_simdev
+source "subsys/logging/Kconfig.template.log_config"
+
+config VCML_SIMDEV_INIT_PRIORITY
+	int "simdev init priority"
+	default 90
+	help
+	  SIMDEV initialization priority.
+
+endif # VCML_SIMDEV

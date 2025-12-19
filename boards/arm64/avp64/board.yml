@@ -1,0 +1,20 @@
+ ##############################################################################
+ #                                                                            #
+ # Copyright (C) 2025 Nils Bosbach                                            #
+ # All Rights Reserved                                                        #
+ #                                                                            #
+ # This is work is licensed under the terms described in the LICENSE file     #
+ # found in the root directory of this source tree.                           #
+ #                                                                            #
+ ##############################################################################
+
+board:
+  name: avp64
+  vendor: arm64
+  socs:
+  - name: avp64
+    variants:
+    - name: x1
+    - name: x2
+    - name: x4
+    - name: x8

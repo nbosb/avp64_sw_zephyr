@@ -1,0 +1,14 @@
+ ##############################################################################
+ #                                                                            #
+ # Copyright (C) 2025 Nils Bosbach                                            #
+ # All Rights Reserved                                                        #
+ #                                                                            #
+ # This is work is licensed under the terms described in the LICENSE file     #
+ # found in the root directory of this source tree.                           #
+ #                                                                            #
+ ##############################################################################
+
+config SOC_AVP64
+	select ARM64
+	select CPU_CORTEX_A
+	select ARMV8_A

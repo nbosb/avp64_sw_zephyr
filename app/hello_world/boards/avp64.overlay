@@ -1,0 +1,19 @@
+/******************************************************************************
+ *                                                                            *
+ * Copyright (C) 2025 Nils Bosbach                                            *
+ * All Rights Reserved                                                        *
+ *                                                                            *
+ * This is work is licensed under the terms described in the LICENSE file     *
+ * found in the root directory of this source tree.                           *
+ *                                                                            *
+ ******************************************************************************/
+
+/ {
+	soc {
+		simdev: vcml_simdev@10008000 {
+			compatible = "vcml,simdev";
+			reg = <0x10008000 0x1000>;
+		};
+    };
+};
+

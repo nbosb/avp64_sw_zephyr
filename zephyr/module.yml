@@ -1,0 +1,16 @@
+ ##############################################################################
+ #                                                                            #
+ # Copyright (C) 2025 Nils Bosbach                                            #
+ # All Rights Reserved                                                        #
+ #                                                                            #
+ # This is work is licensed under the terms described in the LICENSE file     #
+ # found in the root directory of this source tree.                           #
+ #                                                                            #
+ ##############################################################################
+
+name: vcml
+build:
+  kconfig: Kconfig
+  cmake: .
+  settings:
+    dts_root: .

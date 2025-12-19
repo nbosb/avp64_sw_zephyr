@@ -1,0 +1,12 @@
+/******************************************************************************
+ *                                                                            *
+ * Copyright (C) 2025 Nils Bosbach                                            *
+ * All Rights Reserved                                                        *
+ *                                                                            *
+ * This is work is licensed under the terms described in the LICENSE file     *
+ * found in the root directory of this source tree.                           *
+ *                                                                            *
+ ******************************************************************************/
+
+#define NR_CPU 2
+#include "avp64.dts"

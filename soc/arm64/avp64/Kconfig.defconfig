@@ -1,0 +1,26 @@
+ ##############################################################################
+ #                                                                            #
+ # Copyright (C) 2025 Nils Bosbach                                            #
+ # All Rights Reserved                                                        #
+ #                                                                            #
+ # This is work is licensed under the terms described in the LICENSE file     #
+ # found in the root directory of this source tree.                           #
+ #                                                                            #
+ ##############################################################################
+
+if SOC_AVP64
+
+config NUM_IRQS
+	# must be >= the highest interrupt number used
+	# - include the UART interrupts
+	default 220
+
+config SYS_CLOCK_HW_CYCLES_PER_SEC
+	int
+	default 1000000000
+
+config SYS_CLOCK_TICKS_PER_SEC
+    int
+    default 100
+
+endif # SOC_AVP64
