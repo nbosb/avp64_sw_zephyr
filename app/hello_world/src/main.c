@@ -14,6 +14,10 @@ LOG_MODULE_REGISTER(main);
 static const struct device* simdev = DEVICE_DT_GET(DT_NODELABEL(simdev));
 
 int init() {
+    if (!simdev) {
+        LOG_ERR("simdev not found in device tree");
+        return 1;
+    }
     if (!device_is_ready(simdev)) {
         LOG_ERR("simdev not ready");
         return 1;
