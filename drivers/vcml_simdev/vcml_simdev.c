@@ -30,9 +30,11 @@ struct vcml_simdev_data {
 void simdev_stop(const struct device* dev) {
     get_vcml_simdev(dev)->stop = 1;
 }
+
 void simdev_exit(const struct device* dev) {
     get_vcml_simdev(dev)->exit = 1;
 }
+
 void simdev_abort(const struct device* dev) {
     get_vcml_simdev(dev)->abrt = 1;
 }
@@ -40,6 +42,7 @@ void simdev_abort(const struct device* dev) {
 uint64_t simdev_sim_time_ps(const struct device* dev) {
     return get_vcml_simdev(dev)->sclk;
 }
+
 uint64_t simdev_host_time_us(const struct device* dev) {
     return get_vcml_simdev(dev)->hclk;
 }
@@ -47,6 +50,7 @@ uint64_t simdev_host_time_us(const struct device* dev) {
 void simdev_write_stdout(const struct device* dev, uint32_t val) {
     get_vcml_simdev(dev)->sout = val;
 }
+
 void simdev_write_stderr(const struct device* dev, uint32_t val) {
     get_vcml_simdev(dev)->serr = val;
 }
