@@ -13,7 +13,7 @@ cmake_minimum_required(VERSION 3.20)
 set(DTC_OVERLAY_FILE "${CMAKE_CURRENT_SOURCE_DIR}/boards/avp64.overlay")
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
-project(app LANGUAGES C)
+project(app VERSION 2026.01.05 LANGUAGES C)
 
 target_sources(app PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
